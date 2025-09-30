@@ -148,7 +148,9 @@ def get_operation_category(nickname):
         elif 'heif' in name or 'heic' in name:
             return 'Foreign/HEIF'
         elif 'gif' in name:
-            return 'Foreign/GIF'
+            return 'Foreign/GIF'        
+        elif "jxl" in name:
+            return "Foreign/JXL"
         else:
             return 'Foreign/Other'
     
