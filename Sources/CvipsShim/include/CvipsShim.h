@@ -30,6 +30,16 @@ GType shim_g_type_boolean();
 
 GType shim_G_TYPE_STRING();
 
+// GLib 2.90 marks GLogLevelFlags as a flag enum, which changes how Swift imports
+// its constants, so they are read through the shim on every GLib version.
+GLogLevelFlags shim_G_LOG_LEVEL_MASK();
+
+GLogLevelFlags shim_G_LOG_LEVEL_ERROR();
+
+GLogLevelFlags shim_G_LOG_LEVEL_WARNING();
+
+GLogLevelFlags shim_G_LOG_LEVEL_INFO();
+
 GType shim_G_TYPE_DOUBLE();
 
 GType shim_VIPS_TYPE_ARRAY_DOUBLE();

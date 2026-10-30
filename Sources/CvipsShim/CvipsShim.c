@@ -36,6 +36,22 @@ GType shim_G_TYPE_STRING() {
     return G_TYPE_STRING;
 }
 
+GLogLevelFlags shim_G_LOG_LEVEL_MASK() {
+    return G_LOG_LEVEL_MASK;
+}
+
+GLogLevelFlags shim_G_LOG_LEVEL_ERROR() {
+    return G_LOG_LEVEL_ERROR;
+}
+
+GLogLevelFlags shim_G_LOG_LEVEL_WARNING() {
+    return G_LOG_LEVEL_WARNING;
+}
+
+GLogLevelFlags shim_G_LOG_LEVEL_INFO() {
+    return G_LOG_LEVEL_INFO;
+}
+
 GType shim_G_TYPE_DOUBLE() {
     return G_TYPE_DOUBLE;
 }

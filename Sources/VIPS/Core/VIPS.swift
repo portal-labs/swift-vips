@@ -21,7 +21,7 @@ public enum VIPS {
         if let loggingDelegate = loggingDelegate {
             let box = Unmanaged.passRetained(loggingDelegate as AnyObject)
             
-            g_log_set_handler("VIPS", G_LOG_LEVEL_MASK, logfunc, box.toOpaque())
+            g_log_set_handler("VIPS", shim_G_LOG_LEVEL_MASK(), logfunc, box.toOpaque())
         }
         
     }
